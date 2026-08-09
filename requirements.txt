@@ -1,0 +1,32 @@
+# Tested with Python 3.11 on macOS (Apple Silicon, CPU only).
+# Everything runs on CPU; no GPU is required.
+
+# Core scientific stack
+numpy>=1.26
+torch>=2.2
+torchvision>=0.17
+
+# Cryptographic primitives for Phase 3
+# ECDH key agreement, AES-GCM (AEAD), AES-CTR (PRG).
+# Shamir secret sharing is implemented by hand in src/secure_agg/primitives.py.
+cryptography>=42.0
+
+# Image quality metrics for the gradient-inversion evaluation (PSNR, SSIM)
+scikit-image>=0.22
+
+# Plotting and notebooks
+matplotlib>=3.8
+seaborn>=0.13
+jupyter>=1.0
+ipykernel>=6.29
+
+# Utilities
+tqdm>=4.66
+pandas>=2.2
+
+# Tests
+pytest>=8.0
+
+# NOTE: the project proposal mentioned Flower (flwr) as the FL framework.
+# The FedAvg loop is written by hand instead — see the module docstring of
+# src/fl_baseline.py for the reasoning — so flwr is not a dependency.

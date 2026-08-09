@@ -1,0 +1,5 @@
+attack,scenario,converged,mean_psnr_db,mean_ssim
+DLG,Vanilla FL (single gradient),3/5,18.13,0.3036
+iDLG,Vanilla FL (single gradient),5/5,20.77,0.6158
+DLG,Secure Aggregation (sum of 5),0/1,18.85,0.0618
+iDLG,Secure Aggregation (sum of 5),0/1,14.53,0.0063

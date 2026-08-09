@@ -1,0 +1,6 @@
+,DLG,iDLG
+Convergence rate (out of 10),6.0,8.0
+Label recovery (out of 10),7.0,10.0
+Mean restarts used,3.3,3.3
+Mean PSNR (dB),19.593,20.472
+Mean SSIM,0.374,0.509
