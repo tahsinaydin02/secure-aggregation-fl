@@ -1,5 +1,9 @@
 # Secure Aggregation vs. Gradient Leakage in Federated Learning
 
+[![tests](https://github.com/tahsinaydin02/secure-aggregation-fl/actions/workflows/tests.yml/badge.svg)](https://github.com/tahsinaydin02/secure-aggregation-fl/actions/workflows/tests.yml)
+[![Python 3.11](https://img.shields.io/badge/python-3.11-blue.svg)](https://www.python.org/downloads/)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+
 A from-scratch implementation of two papers, run against each other:
 
 - **the attack** — *Deep Leakage from Gradients* (Zhu, Liu & Han, NeurIPS 2019) and its

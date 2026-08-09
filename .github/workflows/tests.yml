@@ -1,0 +1,30 @@
+name: tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  pytest:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          # Crypto and protocol layer.
+          pip install numpy cryptography pytest
+          # CPU-only torch, for the quantization / FedAvg / iDLG tests.
+          pip install torch --index-url https://download.pytorch.org/whl/cpu
+
+      - name: Run test suite
+        run: pytest -q

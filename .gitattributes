@@ -1,0 +1,8 @@
+# The notebooks carry committed outputs (figures as base64), so by byte count
+# they dwarf the source. Without this, GitHub's language bar reports the repo
+# as ~95% "Jupyter Notebook" and hides the fact that the substance is Python.
+# Marking them as documentation keeps them browsable but out of the stats.
+experiments/*.ipynb linguist-documentation
+
+# Results are generated artefacts, not authored code.
+results/* linguist-generated
